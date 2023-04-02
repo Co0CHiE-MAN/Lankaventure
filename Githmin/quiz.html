@@ -1,0 +1,430 @@
+lalabel
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Alkatra:wght@400;500;600;700&family=Lobster&family=Pacifico&family=Poppins:wght@100;200;300;400;500;600;700;800;900&family=Titillium+Web:wght@200;300;400;600;700;900&display=swap"
+        rel="stylesheet" />
+    <!--Link to external style sheets-->
+    <link rel="stylesheet" href="quiz.css" />
+    <link rel="stylesheet" href="../Kalindu/navbar.css" />
+    <link rel="stylesheet" href="../Kalindu/footer.css" />
+
+    <!-- Create the title of the page -->
+    <title>Quiz</title>
+</head>
+
+<body>
+    <!-- Add a navigation bar -->
+    <header>
+        <div class="backImg">
+            <img src="Image/Image20230401133624.jpg" alt="backimage">
+        </div>
+        <nav>
+            <div class="logo">LankaVenture</div>
+            <ul class="navlist">
+                <li><a href="../Kalindu/index.html">Home</a></li>
+                <li><a href="../Senura/destinations.html">Destinations</a></li>
+                <li><a href="#shop.html">Shop</a></li>
+                <li><a href="quizst.html" class="nowOn">Quiz</a></li>
+                <li><a href="../Kalindu/feedback.html">Feedback</a></li>
+                <li><a href="../Senura/sitemap.html">Sitemap</a></li>
+                <li><a href="aboutus.html">About Us</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="mainCont">
+        <div class="QuizMain">
+            <div class="QuizHeader">
+                <!-- Create a title section -->
+                <h2 class="MainTitle"><b>Quizz</b></h2>
+                <div class="Timer">
+                    <div class="TimerDesc">Time Left</div>
+                    <div id="Timer"></div>
+                </div>
+            </div>
+            <div id="Contner1">
+                <form name="form" class="form">
+                    <br /><br /><br />
+                    <!--Create Quiz questions -->
+                    <!--Question no 1 -->
+                    <div class="Question1" id="QnOne">
+                        <p class="question">
+                            1. What is the currency used in Sri Lanka?
+                        </p>
+                        <!--Question no 1 -->
+
+                        <ul class="option">
+                            <label class="answers">
+                                <input class="answer" type="radio" name="Qn1" value="0" id="yen" />
+                                <label for="yen">Yen</label>
+                            </label>
+                            <label class="answers">
+                                <input class="answer" type="radio" name="Qn1" value="0" id="euro" />
+                                <label for="euro">Euro</label>
+                            </label>
+                            <label class="answers">
+                                <input class="answer" type="radio" name="Qn1" value="10" id="rupee" />
+                                <label id="CorrectStr1" for="rupee">SL Rupee</label>
+                            </label>
+                            <label class="answers">
+                                <input class="answer" type="radio" name="Qn1" value="0" id="dollar" />
+                                <label for="dollar">Dollar</label>
+                            </label>
+                        </ul>
+                    </div>
+
+                    <!--Question no 2 -->
+                    <div class="Question2">
+                        <p class="question">
+                            2. What is the Capital of Sri Lanka?
+                        </p>
+
+                        <ul class="option">
+                            <label class="answers">
+                                <input class="answer" type="radio" name="Qn2" value="10" id="SriJayawardanapuraKotte" />
+                                <label for="SriJayawardanapuraKotte" id="CorrectStr2">Sri Jayawardenepura Kotte</label>
+                            </label>
+                            <label class="answers">
+                                <input class="answer" type="radio" name="Qn2" value="0" id="kandy" />
+                                <label for="kandy">Kandy</label>
+                            </label>
+                            <label class="answers">
+                                <input class="answer" type="radio" name="Qn2" value="0" id="jaffna" />
+                                <label for="jaffna">Jaffna</label>
+                            </label>
+                            <label class="answers">
+                                <input class="answer" type="radio" name="Qn2" value="0" id="colombo" />
+                                <label for="colombo">Colombo</label>
+                            </label>
+                        </ul>
+                    </div>
+
+                    <!--Question no 3 -->
+                    <div class="Question3">
+                        <p class="question">
+                            3. What is the highest mountain in Sri Lanka?
+                        </p>
+
+                        <ul class="option">
+                            <label class="answers">
+                                <input class="answer" type="radio" name="Qn3" value="0" id="everest" />
+                                <label for="everest">Everest</label>
+                            </label>
+                            <label class="answers">
+                                <input class="answer" type="radio" name="Qn3" value="10" id="pidurutalagala" />
+                                <label id="CorrectStr3" for="pidurutalagala">Pidurutalagala</label>
+                            </label>
+                            <label class="answers">
+                                <input class="answer" type="radio" name="Qn3" value="0" id="Sigiriya" />
+                                <label for="Sigiriya">Sigiriya</label>
+                            </label>
+                            <label class="answers">
+                                <input class="answer" type="radio" name="Qn3" value="0" id="Adampeak" />
+                                <label for="Adampeak">Adam's peak</label>
+                            </label>
+                        </ul>
+                    </div>
+
+                    <!--Question no 4 -->
+                    <div class="Question4">
+                        <p class="question">
+                            4. What is the most popular sport in Sri Lanka??
+                        </p>
+
+                        <ul class="option">
+                            <label class="answers">
+                                <input class="answer" type="radio" name="Qn4" value="0" id="rugby" />
+                                <label for="rugby">Rugby</label>
+                            </label>
+                            <label class="answers">
+                                <input class="answer" type="radio" name="Qn4" value="0" id="volleyball" />
+                                <label for="volleyball">Volleyball</label>
+                            </label>
+                            <label class="answers">
+                                <input class="answer" type="radio" name="Qn4" value="0" id="badminton" />
+                                <label for="badminton">Badminton</label>
+                            </label>
+                            <label class="answers">
+                                <input class="answer" type="radio" name="Qn4" value="10" id="cricket" />
+                                <label id="CorrectStr4" for="cricket">Cricket</label>
+                            </label>
+                        </ul>
+                    </div>
+                    <!--Question no 5 -->
+                    <div class="Question5">
+                        <p class="question">
+                            5. What is the largest district in Sri Lanka?
+                        </p>
+
+                        <ul class="option">
+                            <label class="answers">
+                                <input type="radio" class="answer" name="Qn5" value="0" id="Colombo" />
+                                <label for="Colombo">Colombo</label>
+                            </label>
+                            <label class="answers">
+                                <input type="radio" class="answer" name="Qn5" value="10" id="anuradhapura" />
+                                <label id="CorrectStr5" for="anuradhapura">Anuradhapura</label>
+                            </label>
+                            <label class="answers">
+                                <input type="radio" class="answer" name="Qn5" value="0" id="gampaha" />
+                                <label for="gampaha">Gampaha</label>
+                            </label>
+                            <label class="answers">
+                                <input type="radio" class="answer" name="Qn5" value="0" id="galle" />
+                                <label for="galle">Galle</label>
+                            </label>
+                        </ul>
+                    </div>
+                    <!--Question no 6 -->
+                    <div class="Question6">
+                        <p class="question">
+                            6. How many provinces are there in Sri Lanka?
+                        </p>
+
+                        <ul class="option">
+                            <label class="answers">
+                                <input type="radio" class="answer" name="Qn6" value="0" id="21" />
+                                <label for="21">21 provinces</label>
+                            </label>
+                            <label class="answers">
+                                <input type="radio" class="answer" name="Qn6" value="10" id="9" />
+                                <label id="CorrectStr6" for="9">9 provinces</label>
+                            </label>
+                            <label class="answers">
+                                <input type="radio" class="answer" name="Qn6" value="0" id="12" />
+                                <label for="12">12 provinces</label>
+                            </label>
+                            <label class="answers">
+                                <input type="radio" class="answer" name="Qn6" value="0" id="8" />
+                                <label for="8">8 provinces</label>
+                            </label>
+                        </ul>
+                    </div>
+                    <!--Question no 7 -->
+                    <div class="Question7">
+                        <p class="question">
+                            7. Which river is the longest in Sri Lanka?
+                        </p>
+
+                        <ul class="option">
+                            <label class="answers">
+                                <input type="radio" class="answer" name="Qn7" value="0" id="Kelaniriver" />
+                                <label for="Kelaniriver">Kelani River</label>
+                            </label>
+                            <label class="answers">
+                                <input type="radio" class="answer" name="Qn7" value="0" id="nileriver" />
+                                <label for="nileriver">Nile River</label>
+                            </label>
+                            <label class="answers">
+                                <input type="radio" class="answer" name="Qn7" value="0" id="Nilwala" />
+                                <label for="Nilwala">Nilwala River</label>
+                            </label>
+                            <label class="answers">
+                                <input type="radio" class="answer" name="Qn7" value="10" id="Mahaweli" />
+                                <label id="CorrectStr7" for="Mahaweli">Mahaweli River</label>
+                            </label>
+                        </ul>
+                    </div>
+                    <!--Question no 8 -->
+                    <div class="Question8">
+                        <p class="question">
+                            8. What is the first language in Sri Lanka?
+                        </p>
+
+                        <ul class="option">
+                            <label class="answers">
+                                <input type="radio" class="answer" name="Qn8" value="10" id="sinhala" />
+                                <label id="CorrectStr8" for="sinhala">Sinhala</label>
+                            </label>
+                            <label class="answers">
+                                <input type="radio" class="answer" name="Qn8" value="0" id="chinese" />
+                                <label for="chinese">Chinese</label>
+                            </label>
+                            <label class="answers">
+                                <input type="radio" class="answer" name="Qn8" value="0" id="english" />
+                                <label for="english">English</label>
+                            </label>
+                            <label class="answers">
+                                <input type="radio" class="answer" name="Qn8" value="0" id="arabic" />
+                                <label for="arabic">Arabic</label>
+                            </label>
+                        </ul>
+                    </div>
+                    <!--Question no 9 -->
+                    <div class="Question9">
+                        <p class="question">
+                            9. What is the area of ​​Sri Lanka in square
+                            kilometers?
+                        </p>
+
+                        <ul class="option">
+                            <label class="answers">
+                                <input type="radio" class="answer" name="Qn9" value="0" id="25610" />
+                                <label for="25610">25,610 sq.km.</label>
+                            </label>
+                            <label class="answers">
+                                <input type="radio" class="answer" name="Qn9" value="0" id="126540" />
+                                <label for="126540">126,540 sq.km.</label>
+                            </label>
+                            <label class="answers">
+                                <input type="radio" class="answer" name="Qn9" value="10" id="65610" />
+                                <label id="CorrectStr9" for="65610">65,610 sq.km.</label>
+                            </label>
+                            <label class="answers">
+                                <input type="radio" class="answer" name="Qn9" value="0" id="61110" />
+                                <label for="61110">61,110 sq.km.</label>
+                            </label>
+                        </ul>
+                    </div>
+                    <!--Question no 10 -->
+                    <div class="Question10">
+                        <p class="question">
+                            10. What year did Sri Lanka join the United
+                            Nations?
+                        </p>
+                        <ul class="option">
+                            <label class="answers">
+                                <input type="radio" class="answer" name="Qn10" value="0" id="1948" />
+                                <label for="1948">1948</label>
+                            </label>
+                            <label class="answers">
+                                <input type="radio" class="answer" name="Qn10" value="0" id="1945" />
+                                <label for="1945">1945</label>
+                            </label>
+                            <label class="answers">
+                                <input type="radio" class="answer" name="Qn10" value="0" id="1964" />
+                                <label for="1964">1964</label>
+                            </label>
+                            <label class="answers">
+                                <input type="radio" class="answer" name="Qn10" value="10" id="1955" />
+                                <label id="CorrectStr10" for="1955">1955</label>
+                            </label>
+                        </ul>
+                    </div>
+                    <span class="submitter">
+                        <input class="Button" id="SubButton" onClick="SubQuiz();this.disabled = true;" type="Button"
+                            value="Submit" />
+                    </span>
+                    <br />
+
+                    <!--Create a class for go to the first question-->
+                    <a class="BackTop" href="#QnOne">Back to top</a>
+                </form>
+            </div>
+            <div class="QuizResult">
+                <!--Show user's answers-->
+                <div id="ShowAnswer" style="display: none">
+                    <div class="Result_Title">
+                        <h3 id="Result_Text">
+                            You have completed the Quiz
+                        </h3>
+                        <p>Your results for Quiz</p>
+                    </div>
+
+                    <div class="Quiz_Answers" id="Correct_answer_1"></div>
+                    <div class="Quiz_Answers" id="Correct_answer_2"></div>
+                    <div class="Quiz_Answers" id="Correct_answer_3"></div>
+                    <div class="Quiz_Answers" id="Correct_answer_4"></div>
+                    <div class="Quiz_Answers" id="Correct_answer_5"></div>
+                    <div class="Quiz_Answers" id="Correct_answer_6"></div>
+                    <div class="Quiz_Answers" id="Correct_answer_7"></div>
+                    <div class="Quiz_Answers" id="Correct_answer_8"></div>
+                    <div class="Quiz_Answers" id="Correct_answer_9"></div>
+                    <div class="Quiz_Answers" id="Correct_answer_10"></div>
+
+                    <!--Show user's Score -->
+                    <div class="Quiz_Score">
+                        <h2 id="User_Score"></h2>
+                    </div>
+
+                    <!--Create Buttons-->
+                    <input type="Button" value="Try Again" onclick="location.reload();" class="Button"
+                        id="ResetButton" />
+                    <input type="Button" value="Show Answers" class="Button" id="Show" />
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="footerMainCont">
+            <div class="footerLine"></div>
+            <div class="footer">
+                <div class="footerCompany">
+                    <div class="footerLogo">LankaVenture</div>
+                    <div class="footerLogoDesc">
+                        - Discover the magic of Sri Lanka with
+                        <span class="footerLogoOnly">LankaVenture</span>.
+                    </div>
+                </div>
+                <div class="footerCont">
+                    <div class="footerTitle">QUICK LINKS</div>
+                    <div class="footerQuickLinks">
+                        <ul class="footerQLList">
+                            <li><a href="../Kalindu/index.html">Home</a></li>
+                            <li>
+                                <a href="../Senura/destinations.html">Destinations</a>
+                            </li>
+                            <li><a href="../Yashmitha/shop.html">Shop</a></li>
+                            <li><a href="quizst.html">Quiz</a></li>
+                            <li><a href="../Kalindu/feedback.html">Feedback</a></li>
+                            <li><a href="../Senura/sitemap.html">Sitemap</a></li>
+                            <li><a href="aboutus.html">About Us</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="footerCont">
+                    <div class="footerTitle">CONTACT US</div>
+                    <div class="foooterContactInfo">
+                        <ul class="footerCIList">
+                            <li class="footerCIListItems">
+                                <div class="footerCIName">Yashmitha:</div>
+                                <div class="footerCINumber">
+                                    <a href="tel:0707790977">0707790977</a>
+                                </div>
+                            </li>
+                            <li class="footerCIListItems">
+                                <div class="footerCIName">Kalindu:</div>
+                                <div class="footerCINumber">
+                                    <a href="tel:0707790977">0707790977</a>
+                                </div>
+                            </li>
+                            <li class="footerCIListItems">
+                                <div class="footerCIName">Githmin:</div>
+                                <div class="footerCINumber">
+                                    <a href="tel:0707790977">0707790977</a>
+                                </div>
+                            </li>
+                            <li class="footerCIListItems">
+                                <div class="footerCIName">Senura:</div>
+                                <div class="footerCINumber">
+                                    <a href="tel:0707790977">0707790977</a>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="footerCont">
+                    <div class="footerTitle">FEEDBACK</div>
+                    <div class="footerFeedbackInfo">
+                        <div class="footerFI">Send us an email to :</div>
+                        <div class="footerFEmail">
+                            <a href="../Kalindu/feedback.html">lankaventure.services@gmail.com</a>
+                        </div>
+                        <div class="footerPageEditor">
+                            <div class="footerFI">Let's see the <a href="githmin.html" class="footerEditor">page editor</a></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!--link to javascript code-->
+    <script src="quiz.js"></script>
+</body>
+
+</html>
