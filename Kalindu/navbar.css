@@ -1,14 +1,14 @@
 ::-webkit-scrollbar {
-  position: fixed;
-  width: 7px;
-  background-color: #a1a1a1;
-  border-radius: 1px;
+    position: fixed;
+    width: 7px;
+    background-color: #a1a1a1;
+    border-radius: 1px;
 }
 ::-webkit-scrollbar-thumb {
-  background-color: #2be9ad;
-  border-radius: 10px;
+    background-color: #2be9ad;
+    border-radius: 10px;
 }
-*{
+* {
     text-decoration: none;
     scroll-behavior: smooth !important;
 }
@@ -21,10 +21,10 @@ nav {
     height: 70px;
     display: flex;
     flex-direction: row;
-    justify-content: space-evenly; 
+    justify-content: space-evenly;
     align-items: center;
     background-color: rgba(83, 83, 83, 0.404);
-    backdrop-filter: blur(10px);    
+    backdrop-filter: blur(10px);
 }
 .navlist {
     display: flex;
@@ -32,7 +32,7 @@ nav {
     flex-direction: row;
     list-style-type: none;
 }
-.navlist a{
+.navlist .navButton {
     color: white;
     padding: 0 10px;
     margin: 0 5px;
@@ -43,20 +43,65 @@ nav {
     font-family: "Paytone One", sans-serif;
 }
 
-.navlist a:hover{
+.navButton:hover {
     color: black;
     background-color: white;
     border-radius: 3px;
     margin: 0 10px;
 }
+.navlist li:hover .dropDown {
+    display: block;
+}
+.navlist li{
+    position: relative;
+}
+
 .nowOn {
     border-radius: 20px 10px;
     border: 2px solid white;
 }
 .logo {
-    font-family: 'Lobster', cursive;
+    font-family: "Lobster", cursive;
     font-size: 35px;
     color: white;
 }
 
+.dropDown {
+    position: absolute;
+    top: 20px;
+    left: -5px;
+    display: none;
+    padding: 5px 10px;
+    border-radius: 10px;
+}
 
+.dropDown:hover {
+    display: block;
+}
+.dropDown li {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.dropDown ul {
+    padding-top: 10px;
+    border-radius: 10px;
+}
+.dropDownItem {
+    position: relative;
+    padding: 0 10px;
+    margin: 5px 5px;
+    cursor: pointer;
+    transition: ease 0.4s;
+    padding: 10px 20px;
+    font-family: "Paytone One", sans-serif;
+    color: black;
+    background-color: white;
+    border-radius: 3px;
+    transition: ease 0.4s;
+}
+.dropDownItem:hover {
+    box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.459);
+    justify-content: center;
+}

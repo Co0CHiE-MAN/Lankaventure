@@ -30,13 +30,13 @@ p{
 }
 
 .Container{
-    height: calc(100vh - 70px);
+    height: 100vh;
     width: 100%;
     padding-right: 18px;
     padding-left: 18px;
     margin-right: auto;
     margin-left: auto;
-    margin-bottom: -7px;
+    /* margin-bottom: -7px; */
 }
 .imageCont {
     position: absolute;
@@ -52,11 +52,13 @@ p{
     height: 100vh;
     width: 100%;
     opacity: 0.6;
+    object-fit: cover;
     display: block;
 
 }
 .Title_section{
-    margin-top: 12vh;
+    /* margin-top: 12vh; */
+    padding-top: 12vh;
 	text-align:center;
 	font-size: 35px;
     line-height: 70px;

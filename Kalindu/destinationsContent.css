@@ -22,9 +22,9 @@
     font-weight: 600;
 }
 .content {
-    margin-top: 50px;
     width: 100%;
     display: flex;
+    margin: 50px 0;
 }
 .contentImg {
     position: relative;

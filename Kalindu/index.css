@@ -1,4 +1,3 @@
-
 * {
     padding: 0;
     margin: 0;
@@ -15,7 +14,7 @@
     left: 0;
     width: 100%;
     height: 100vh;
-    background-color: rgba(0, 0, 0, 0.863);
+    background-color: rgba(0, 0, 0, 0.938);
     color: white;
     text-align: center;
     display: flex;
@@ -23,7 +22,12 @@
     align-items: center;
     justify-content: center;
 }
-
+.logo {
+    font-family: "Lobster", cursive;
+    margin: 10px 0px;
+    color: white;
+    font-size: 35px;
+}
 table,
 th,
 td {
@@ -60,7 +64,6 @@ td {
     animation: fadeIn 1s ease-in forwards;
 }
 /* --------------    Splash Screen end  ------------------------------------------------------------------------- */
-
 
 /* -------------    Header start   -------------------------------------------------------------------------- */
 
@@ -115,13 +118,11 @@ td {
     margin: 20px 10px;
     padding: 15px;
     border-radius: 7px;
-
 }
 .introImageCont {
     /* position: relative; */
     height: 200%;
     width: 55%;
-    
 }
 .introImage {
     position: relative;
@@ -148,8 +149,7 @@ td {
     text-align: justify;
     line-height: 30px;
 }
-@media screen and (max-width:800px) {
-    
+@media screen and (max-width: 800px) {
 }
 /* ------------     Introduction end    ------------------------------------------------------ */
 
@@ -158,14 +158,19 @@ td {
     border-radius: 7px;
     transition: all 0.4s;
 }
-.image:hover {
+.imageCont:hover .image {
     transform: scale(1.1);
+}
+.imageCont:hover .hoverText {
+    transform: translateY(-150px);
+    z-index: 10;
+    /* bottom: 0; */
 }
 .image-grid {
     --gap: 16px;
     --num-cols: 3;
     --num-rows: 2;
-    --row-height: 400px;
+    --row-height: 300px;
 
     box-sizing: border-box;
     padding: var(--gap);
@@ -179,6 +184,7 @@ td {
 }
 
 .imageCont {
+    position: relative;
     width: 100%;
     height: 100%;
     overflow: hidden;
@@ -188,8 +194,23 @@ td {
     width: 100%;
     height: 100%;
     object-fit: cover;
+    opacity: 1;
 }
-
+.image-grid .hoverText {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    left: 0;
+    width: 100%;
+    height: 200px;
+    text-align: center;
+    font-family: "Alkatra", cursive;
+    color: white;
+    background: linear-gradient(to top, #000, transparent);
+    font-size: 50px;
+    transition: ease 0.4s;
+}
 .image-grid-col-1 {
     grid-column: span 1;
 }
