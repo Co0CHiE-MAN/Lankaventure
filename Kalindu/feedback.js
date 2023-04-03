@@ -81,7 +81,7 @@ function sendEmail(feedbackText, rating, mode) {
         Host: "smtp.elasticemail.com",
         Username: "lankaventure.services@gmail.com",
         Password: "3357CDFE59E70B479655DF98A5862C58B596",
-        To: "kalindugunathilake123@gmail.com",
+        To: "kalindu.20211461@iit.ac.lk",
         From: "lankaventure.services@gmail.com",
         Subject: "A Feedback on LankaVenture",
         Body: `You have recieved a new feedback on LankaVenture,
